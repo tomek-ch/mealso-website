@@ -1,12 +1,11 @@
 import { Button } from "./Button";
 import { Container } from "./Container";
-import { HeroImg } from "./HeroImg";
 import { Highlight } from "./Highlight";
 
 export const Hero = () => {
   return (
     <Container>
-      <div className="flex flex-col items-center md:flex-row justify-between gap-10 md:pt-10 md:pb-12">
+      <div className="flex flex-col items-center md:flex-row justify-between gap-10 md:pt-10 pb-10 md:pb-12">
         <div className="max-w-md text-center md:text-left flex flex-col gap-7 items-center md:items-start w-full">
           <h1 className="text-4xl md:text-5xl font-semibold pt-5">
             <Highlight>Meal</Highlight> planning and{" "}
@@ -19,8 +18,7 @@ export const Hero = () => {
           </p>
           <Button>Sign up</Button>
         </div>
-        {/* <img src="/hero.jpg" width="500" /> */}
-        <HeroImg />
+        <img src="/hero.jpg" width="500" />
       </div>
     </Container>
   );
