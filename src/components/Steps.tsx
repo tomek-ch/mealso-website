@@ -1,4 +1,5 @@
 import { Container } from "./Container";
+import { Heading } from "./Heading";
 import { ArrowRight } from "./icons/ArrowRight";
 
 const Step = ({
@@ -22,9 +23,7 @@ export const Steps = () => {
   return (
     <div className="py-10 bg-amber-400/50">
       <Container>
-        <h2 className="text-3xl font-semibold text-center mb-16">
-          Simplify your meal planning
-        </h2>
+        <Heading>Simplify your meal planning</Heading>
         <div className="flex justify-between md:content-center">
           <Step
             img="/add-meal.png"
