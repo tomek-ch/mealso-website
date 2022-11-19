@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-export const Logo = (props: SVGProps<SVGSVGElement>) => (
+export const Carrot = (props: SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 18 19"
     fill="none"
