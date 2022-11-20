@@ -1,19 +1,23 @@
 ---
+import { BottomHero } from '../components/BottomHero';
 import { Cards } from '../components/Cards';
-import { Hero } from '../components/Hero';
 import { ModalBtn } from '../components/ModalBtn';
 import { SignUpModal } from '../components/SignUpModal';
 import { Steps } from '../components/Steps';
+import { TopHero } from '../components/TopHero';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Meal planning and grocery shopping made easy | Mealso">
 	<main>
-		<Hero>
+		<TopHero>
 			<ModalBtn client:load />
-		</Hero>
+		</TopHero>
 		<Steps />
 		<Cards />
 		<SignUpModal client:load />
+		<BottomHero>
+			<ModalBtn client:load />
+		</BottomHero>
 	</main>
 </Layout>
