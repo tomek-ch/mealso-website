@@ -1,14 +1,19 @@
 ---
 import { Cards } from '../components/Cards';
 import { Hero } from '../components/Hero';
+import { ModalBtn } from '../components/ModalBtn';
+import { SignUpModal } from '../components/SignUpModal';
 import { Steps } from '../components/Steps';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Meal planning and grocery shopping made easy | Mealso">
 	<main>
-		<Hero />
+		<Hero>
+			<ModalBtn client:load />
+		</Hero>
 		<Steps />
 		<Cards />
+		<SignUpModal client:load />
 	</main>
 </Layout>

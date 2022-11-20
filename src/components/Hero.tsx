@@ -1,11 +1,15 @@
-import { Button } from "./Button";
+import { ReactNode } from "react";
 import { Container } from "./Container";
 import { Highlight } from "./Highlight";
 
-export const Hero = () => {
+interface HeroProps {
+  children: ReactNode;
+}
+
+export const Hero = ({ children }: HeroProps) => {
   return (
     <Container>
-      <div className="flex flex-col items-center md:flex-row justify-between gap-10 md:pt-10 pb-10 md:pb-12">
+      <div className="flex flex-col items-center md:flex-row justify-between gap-10 md:pt-10 pb-10 md:pb-24">
         <div className="max-w-md text-center md:text-left flex flex-col gap-7 items-center md:items-start w-full">
           <h1 className="text-4xl md:text-5xl font-semibold pt-5">
             <Highlight>Meal</Highlight> planning and{" "}
@@ -16,7 +20,7 @@ export const Hero = () => {
             Mealso makes it easy to keep track of your groceries and plan your
             meals.
           </p>
-          <Button>Sign up</Button>
+          {children}
         </div>
         <img src="/hero.jpg" width="500" />
       </div>

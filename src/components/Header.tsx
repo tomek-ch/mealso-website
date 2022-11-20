@@ -1,9 +1,12 @@
-import { Button } from "./Button";
+import { ReactNode } from "react";
 import { Container } from "./Container";
-import { Carrot } from "./icons/Carrot";
 import { Logo } from "./Logo";
 
-export const Header = () => {
+interface HeaderProps {
+  children: ReactNode;
+}
+
+export const Header = ({ children }: HeaderProps) => {
   return (
     <Container>
       <header className="flex justify-between items-center py-4">
@@ -12,7 +15,7 @@ export const Header = () => {
             <Logo />
           </h1>
         </a>
-        <Button className="text-sm md:text-base">Sign up</Button>
+        {children}
       </header>
     </Container>
   );
