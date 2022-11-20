@@ -19,19 +19,19 @@ export const Steps = () => {
         <div className="flex justify-between gap-4 md:content-center">
           <Step
             img="/add-meal.png"
-            text="1. Add your favorite meals"
+            text="Add your favorite meals"
             alt="Meal form in the Mealso mobile app"
           />
           <ArrowRight width="24" className="pb-16" />
           <Step
             img="/groceries.png"
-            text="2. Make a shopping list"
+            text="Make a shopping list"
             alt="Shopping list in the Mealso mobile app"
           />
           <ArrowRight width="24" className="hidden md:block pb-16" />
           <Step
             img="/meals.png"
-            text="3. Plan your next meal"
+            text="Plan your next meal"
             alt="Meal list in the Mealso mobile app"
             className="hidden md:block"
           />
