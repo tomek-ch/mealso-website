@@ -1,5 +1,6 @@
 import { useModal } from "../store/modalStore";
 import { Modal } from "./Modal";
+import { SignUpForm } from "./SignUpForm";
 
 export const SignUpModal = () => {
   const { $isModalOpen, toggleModal } = useModal();
@@ -9,7 +10,7 @@ export const SignUpModal = () => {
       onClickOut={toggleModal}
       title="Be the first to try out Mealso"
     >
-      Hello world
+      <SignUpForm />
     </Modal>
   );
 };
