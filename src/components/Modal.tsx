@@ -35,7 +35,7 @@ export const Modal = ({ isOpen, children, onClickOut, title }: ModalProps) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full max-w-sm transform overflow-hidden rounded-2xl bg-white p-5 text-left align-middle shadow-xl transition-all">
+              <Dialog.Panel className="w-full max-w-sm transform overflow-hidden rounded-2xl bg-white p-5 sm:p-8 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="h3"
                   className="text-md md:text-xl mb-4 font-semibold leading-6"
