@@ -1,10 +1,10 @@
 ---
-import { Footer } from '../components/Footer';
-import { Header } from '../components/Header';
-import { ModalBtn } from '../components/ModalBtn';
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import { ModalBtn } from "../components/ModalBtn";
 
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -12,18 +12,18 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="selection:bg-amber-400/50">
-		<Header>
-			<ModalBtn client:load className="text-sm md:text-base" />
-		</Header>
-		<slot />
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="selection:bg-blue-400/50">
+    <Header>
+      <ModalBtn client:load className="text-sm md:text-base" />
+    </Header>
+    <slot />
+    <Footer />
+  </body>
 </html>
